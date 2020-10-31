@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    padding: 20px;
+    background-color: #2c444e;
+}
+li{
+    list-style: none;
+    display: inline;
+    padding: 0 20px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+}
+li a:hover{
+    color: #fec803;
+}
+
+.baris{
+    flex-direction: column;
+    max-width: 600px;
+    width: 70%;
+    margin: 0 auto;
+    float: left;
+}
+/*karena card class nya kedua kan jadi dia juga harus disimpennya kedua, setelah kolom kalo ngga nanti ga jalan alias error*/
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 108px;
+    margin-left: 28%;
+    background-color: #f5b400;
+    font-weight: bold;
+}
+.kolom{
+    display: flex;
+}
+.tampilkan{
+    padding: 10px 10px;
+    color: white;
+    border: 2px solid black;
+    font-size: 35px;
+    background-color: #385a64;
+    text-align: right;
+    margin-bottom: 35px;
+}
+.button{
+    border: 1px solid black;
+    font-size: 30px;
+    padding: 20px;
+    flex-basis: 25%;
+    text-align: center;
+    background-color: #2c444e;
+    color: white;
+    cursor: pointer;
+}
+.double{
+    flex-basis: 50%;
+}
+.operator, .negatip, .double{
+    background-color: white;
+    color: #2c444e;
+}
+.bersihkan{
+    background-color: #ffc800;
+    color: #2c444e;
+}
+.button:hover{
+    color: #ffc800;
+    padding: 16px;
+    font-size: 33px;
+}
+.bersihkan:hover{
+    color: white;
+    padding: 16px;
+    font-size: 33px;
+}
